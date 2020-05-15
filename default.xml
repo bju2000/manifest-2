@@ -13,7 +13,7 @@
            fetch="https://github.com/pintaf"
            revision="maru-0.7" />
 
-  <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
+  <project path="build/make" name="android_build" remote="pintaf" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
