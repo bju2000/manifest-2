@@ -8,8 +8,12 @@
   <remote  name="maruos"
            fetch="https://github.com/maruos"
            revision="maru-0.6" />
+  
+    <remote  name="pintaf"
+           fetch="https://github.com/pintaf"
+           revision="maru-0.7" />
 
-  <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
+  <project path="build/make" name="android_build" remote="pintaf" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -19,16 +23,16 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
-  <project path="frameworks/base" name="pintaf/android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="maru-0.7" />
-  <project path="frameworks/native" name="pintaf/android_platform_frameworks_native" groups="pdk" remote="github" revision="maru-0.7" />
-  <project path="packages/apps/Settings" name="pintaf/android_platform_packages_apps_Settings" remote="github" revision="maru-0.7" />
+  <project path="external/lxc" name="lxc-android" remote="pintaf" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pintaf" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pintaf" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pintaf" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="maruos" />
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="pintaf" />
   <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
    <project path="system/sepolicy" name="pintaf/android_system_sepolicy" groups="pdk" remote="github" revision="maru-0.7" />
 
-  <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
+  <project path="vendor/maruos" name="vendor_maruos" remote="pintaf" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
