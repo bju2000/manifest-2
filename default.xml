@@ -38,9 +38,11 @@
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
-  <!-- Nash - Moto Z2 Force -->
+  <!-- START Nash - Moto Z2 Force -->
   <project name="TheMuppets/proprietary_vendor_motorola" path="proprietary/vendor/motorola" remote="github"  revision="lineage-16.0" />
   <project name="android_device_motorola_nash" path="device/motorola/nash" remote="pintaf" />
   <project name="android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="pintaf" />
+  <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" />
+  <!-- END Nash - Moto Z2 Force -->
 
 </manifest>
