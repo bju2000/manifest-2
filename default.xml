@@ -24,7 +24,7 @@
   </project>
 
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0" />
-  <project path="external/lxc" name="lxc-android" remote="pintaf" revision="maru-0.7-lxc1" />
+  <project path="external/lxc" name="lxc-android" remote="pintaf" revision="maru-0.7" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pintaf" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pintaf" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pintaf" />
@@ -39,11 +39,17 @@
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
-  <!-- START Nash - Moto Z2 Force -->
+  <!-- START nash - Moto Z2 Force -->
   <project name="TheMuppets/proprietary_vendor_motorola" path="proprietary/vendor/motorola" remote="github"  revision="lineage-16.0" />
   <project name="android_device_motorola_nash" path="device/motorola/nash" remote="pintaf" />
   <project name="android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="pintaf" />
   <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" />
-  <!-- END Nash - Moto Z2 Force -->
-
+  <!-- END nash - Moto Z2 Force -->
+  
+  <!-- START pme - HTC 10 -->
+  <project name="pintaf/android_device_htc_pme" path="device/htc/pme" remote="github" revision="maru-0.6-l16" />
+  <project name="pintaf/android_kernel_htc_msm8996" path="kernel/htc/msm8996" remote="github" revision="lineage-16.0" />
+  <project name="pintaf/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="lineage-16.0" />
+  <!-- END pme - HTC 10 -->
+  
 </manifest>
