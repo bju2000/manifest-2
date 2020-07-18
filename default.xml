@@ -34,6 +34,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="pintaf" />
 
   <project path="vendor/maruos" name="vendor_maruos" remote="pintaf" />
+  <project path="vendor/maruos/apps/MaruSettings" name="vendor_maruos_packages_apps_MaruSettings" remote="pintaf" revision="maru-0.6" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="pintaf" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
