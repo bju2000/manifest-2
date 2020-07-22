@@ -27,6 +27,7 @@
   <project path="external/lxc" name="lxc-android" remote="pintaf" revision="maru-0.7-lxc1" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pintaf" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pintaf" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pintaf" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="pintaf" />
   <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="pintaf" revision="master" />
