@@ -54,7 +54,7 @@
   <!-- END pme - HTC 10 -->
 
   <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
-  <project name="android_device_google_sailfish" path="device/google/sailfish" remote="pintaf" />
+  <project name="android_device_google_marlin" path="device/google/marlin" remote="pintaf" />
   <project name="android_kernel_google_marlin" path="kernel/google/marlin" remote="pintaf" />
   <project name="TheMuppets/proprietary_vendor_google" path="vendor/google" remote="github" revision="lineage-16.0" />
   <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
