@@ -9,6 +9,7 @@
   <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
   <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" />
   <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+  <remove-project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
 
   <!-- AOSP overrides -->
   <!-- Launcher3 -->

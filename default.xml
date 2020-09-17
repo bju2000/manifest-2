@@ -39,26 +39,27 @@
   <project path="vendor/maruos/mflinger" name="mflinger" remote="pintaf" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="pintaf" revision="lineage-16.0"/>
+  <project path="prebuilts/lineage-sdk" name="android_prebuilts_lineage-sdk" remote="pintaf" revision="lineage-16.0" />
 
   <!-- Devices -->
   <!-- START nash - Moto Z2 Force -->
-  <project name="android_device_motorola_nash" path="device/motorola/nash" remote="pintaf" />
-  <project name="android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="pintaf" />
-  <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="lineage-16.0" />
-  <project name="LineageOS/android_prebuilts_lineage-sdk" path="prebuilts/lineage-sdk" remote="github" revision="lineage-16.0" />
-  <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" />
+  <project path="device/motorola/nash" name="android_device_motorola_nash" remote="pintaf" />
+  <project path="kernel/motorola/msm8998" name="android_kernel_motorola_msm8998" remote="pintaf" />
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="lineage-16.0" />
+  <project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" />
   <!-- END nash - Moto Z2 Force -->
   
   <!-- START pme - HTC 10 -->
-  <project name="android_device_htc_pme" path="device/htc/pme" remote="pintaf" />
-  <project name="android_kernel_htc_msm8996" path="kernel/htc/msm8996" remote="pintaf" />
-  <project name="pintaf/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="lineage-16.0" />
+  <project path="device/htc/pme" name="android_device_htc_pme" remote="pintaf" />
+  <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" remote="pintaf" />
+  <project path="vendor/htc" name="pintaf/proprietary_vendor_htc" remote="github" revision="lineage-16.0" />
   <!-- END pme - HTC 10 -->
 
   <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
-  <project name="android_device_google_marlin" path="device/google/marlin" remote="pintaf" />
-  <project name="android_kernel_google_marlin" path="kernel/google/marlin" remote="pintaf" />
-  <project name="TheMuppets/proprietary_vendor_google" path="vendor/google" remote="github" revision="lineage-16.0" />
+  <project path="device/google/marlin" name="android_device_google_marlin" remote="pintaf" />
+  <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="pintaf" />
+  <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github" revision="lineage-16.0" />
   <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
   
 </manifest>
