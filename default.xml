@@ -12,8 +12,12 @@
     <remote  name="pintaf"
            fetch="https://github.com/pintaf"
            revision="maru-0.7" />
+  
+      <remote  name="bju2000"
+           fetch="https://github.com/bju2000"
+           revision="maru-0.8" />
 
-  <project path="build/make" name="android_build" remote="pintaf" groups="pdk" >
+  <project path="build/make" name="android_build" remote="bju2000" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,43 +27,25 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0" />
-  <project path="external/lxc" name="lxc-android" remote="pintaf" revision="maru-0.7-lxc1" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pintaf" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pintaf" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pintaf" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-17.1" />
+  <project path="external/lxc" name="lxc-android" remote="bju2000" revision="maru-0.8-lxc1" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="bju2000" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="bju2000" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="bju2000" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="pintaf" />
-  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="pintaf" revision="master" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="pintaf" />
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="bju2000" />
+  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="bju2000" revision="master" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="bju2000" />
 
-  <project path="vendor/maruos" name="vendor_maruos" remote="pintaf" />
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="pintaf" />
+  <project path="vendor/maruos" name="vendor_maruos" remote="bju2000" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="bju2000" />
   <!-- <project path="vendor/maruos/apps/MaruSettings" name="utcoz/vendor_maruos_packages_apps_MaruSettings" revision="maru-0.7" /> -->
-  <project path="vendor/maruos/mflinger" name="mflinger" remote="pintaf" />
+  <project path="vendor/maruos/mflinger" name="mflinger" remote="bju2000" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
-  <project path="lineage-sdk" name="android_lineage-sdk" remote="pintaf" revision="lineage-16.0"/>
-  <project path="prebuilts/lineage-sdk" name="android_prebuilts_lineage-sdk" remote="pintaf" revision="lineage-16.0" />
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="bju2000" revision="lineage-17.1"/>
+  <project path="prebuilts/lineage-sdk" name="android_prebuilts_lineage-sdk" remote="bju2000" revision="lineage-17.1" />
 
   <!-- Devices -->
-  <!-- START nash - Moto Z2 Force -->
-  <project path="device/motorola/nash" name="android_device_motorola_nash" remote="pintaf" />
-  <project path="kernel/motorola/msm8998" name="android_kernel_motorola_msm8998" remote="pintaf" />
-  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="lineage-16.0" />
-  <project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" />
-  <!-- END nash - Moto Z2 Force -->
-  
-  <!-- START pme - HTC 10 -->
-  <project path="device/htc/pme" name="android_device_htc_pme" remote="pintaf" />
-  <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" remote="pintaf" />
-  <project path="vendor/htc" name="pintaf/proprietary_vendor_htc" remote="github" revision="lineage-16.0" />
-  <!-- END pme - HTC 10 -->
-
-  <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
-  <project path="device/google/marlin" name="android_device_google_marlin" remote="pintaf" />
-  <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="pintaf" />
-  <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github" revision="lineage-16.0" />
-  <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
   
 </manifest>
