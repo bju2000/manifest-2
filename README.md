@@ -8,11 +8,11 @@ with Git](https://source.android.com/source/version-control.html).
 
 To initialize your local repository using the Maru OS trees, use a command like this:
 
-    repo init -u https://github.com/pintaf/manifest -b maru-0.7 --no-clone-bundle --depth=1
+    repo init -u https://github.com/bju2000/manifest-maruos -b maru-0.8 --no-clone-bundle -c --depth=1 --no-tags
 
 Then to sync up:
 
-    repo sync --jobs=8 --fetch-submodules --current-branch --no-clone-bundle
+    repo sync -c -j 16 --force-sync --no-tag --no-clone-bundle --optimized-fetch --prune --fetch-submodules --current-branch
 
 
 ## Contributing
