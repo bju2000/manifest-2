@@ -43,7 +43,6 @@
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
   <project path="lineage-sdk" name="android_lineage-sdk" remote="bju2000" revision="lineage-17.1"/>
-  <project path="prebuilts/lineage-sdk" name="android_prebuilts_lineage-sdk" remote="bju2000" revision="lineage-17.1" />
 
   <!-- Devices -->
   
