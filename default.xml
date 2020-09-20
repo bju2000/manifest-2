@@ -27,7 +27,6 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-17.1" />
   <project path="external/lxc" name="lxc-android" remote="bju2000" revision="maru-0.8-lxc1" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="bju2000" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="bju2000" />
